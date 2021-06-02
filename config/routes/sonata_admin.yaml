@@ -1,0 +1,23 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+yitbox_area:
+  resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+  prefix: /yitbox
+
+_sonata_yitbox:
+  resource: .
+  type: sonata_admin
+  prefix: /yitbox
+
+
+
+
+sonata_user_yitbox_security:
+  resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
+  prefix: /yitbox
+
+sonata_user_yitbox_resetting:
+  resource: '@SonataUserBundle/Resources/config/routing/admin_resetting.xml'
+  prefix: /yitbox/resetting
+

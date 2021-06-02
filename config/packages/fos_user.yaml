@@ -1,0 +1,34 @@
+fos_user:
+  db_driver:      orm # can be orm or odm
+  firewall_name:  main
+  user_class:     App\Entity\Sonata\UserBundle\Entity\User
+
+  group:
+    group_class: App\Entity\Sonata\UserBundle\Entity\Group
+    group_manager: sonata.user.orm.group_manager # If you're using doctrine orm (use sonata.user.mongodb.group_manager for mongodb)
+
+  service:
+    user_manager: sonata.user.orm.user_manager
+
+  from_email:
+    address: "aaaa"
+    sender_name: "aaa"
+
+#sonata_user:
+#  class:
+#    user:  App\Entity\Sonata\UserBundle\Entity\User
+#    group: App\Entity\Sonata\UserBundle\Entity\Group
+
+
+#fos_user:
+#  db_driver: orm
+#  firewall_name: main
+#  user_class: App\Entity\Sonata\UserBundle\Entity\User
+#  group:
+#    group_class: App\Entity\Sonata\UserBundle\Entity\Group
+#    group_manager: sonata.user.orm.group_manager
+#  service:
+#    user_manager: sonata.user.orm.user_manager
+#  from_email:
+#    address: "aaa"
+#    sender_name: "aaa"

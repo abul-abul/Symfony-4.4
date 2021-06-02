@@ -1,0 +1,9 @@
+services:
+    admin.district:
+        class: App\Admin\TestAdmin
+        arguments: [~, App\Entity\Test, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: test, label: test }
+        public: true
+
+
